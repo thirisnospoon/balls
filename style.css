@@ -1,0 +1,184 @@
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 500px;
+    margin-top: 5%;
+    min-width: 100px;
+    max-width: 500px;
+    background-color: #FCF8E8;
+    box-shadow: 0 0 5rem #d9d9d9;
+
+}
+
+.arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 50%; 
+    margin: auto;
+    width: 150px;
+    color: #85C88A;
+    fill: #76549A;
+    animation: arrow-move 2s cubic-bezier(0, 0, 0, 0) backwards infinite;
+}
+
+.moving-ball {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.static-ball {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left:5px;
+    margin-right: 5px;
+    box-sizing: border-box;
+}
+
+.selected {
+    border: 4px solid rgb(112, 112, 112);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.ball-1 {
+    background-color: #76549A;
+}
+
+.ball-2 {
+    background-color: #DF7861;
+}
+
+.ball-3 {
+    background-color: #1C6DD0;
+}
+
+.ball-4 {
+    background-color: #A3E4DB;
+}
+
+.ball-5 {
+    background-color: #F6C6EA;
+}
+
+.ball-6 {
+    background-color: #D9F8C4;
+}
+
+.ball-7 {
+    background-color: #F37878;
+}
+
+.ball-8 {
+    background-color: #A2B5BB;
+    
+}
+
+.ball-9 {
+    background-color: #7D9D9C;
+}
+
+.ball-10 {
+    background-color: #85C88A;
+}
+
+
+/* Animations  */
+
+.anim-ball-1 {
+    animation: move 2s cubic-bezier(0, 0, 0, 0) backwards infinite;
+}
+
+.anim-ball-2 {
+    animation: move 2.1s cubic-bezier(0, 0, 0, 0) backwards infinite;
+}
+
+.anim-ball-3 {
+    animation: move 2.2s cubic-bezier(0, 0, 0, 0) backwards infinite;
+}
+
+.anim-ball-4 {
+    animation: move 2.3s cubic-bezier(0, 0, 0, 0) backwards infinite;
+}
+
+.anim-ball-5 {
+    animation: move 2.4s cubic-bezier(0, 0, 0, 0) backwards infinite;
+}
+
+.anim-ball-6 {
+    animation: move 2.5s cubic-bezier(0, 0, 0, 0) backwards infinite;
+}
+
+.anim-ball-7 {
+    animation: move 2.6s cubic-bezier(0, 0, 0, 0) backwards infinite;
+}
+
+.anim-ball-8 {
+    animation: move 2.7s cubic-bezier(0, 0, 0, 0) backwards infinite;
+}
+
+.anim-ball-9 {
+    animation: move 2.8s cubic-bezier(0, 0, 0, 0) backwards infinite;
+}
+
+.anim-ball-10 {
+    animation: move 2.9s cubic-bezier(0, 0, 0, 0) backwards infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateY(900%);
+    }
+
+    50% {
+        transform: translateX(900%) translateY(900%);
+    }
+
+    75% {
+        transform: translateX(900%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes arrow-move {
+    0% {
+        transform: rotate(225deg);
+    }
+
+    25% {
+        transform: rotate(135deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    75% {
+        transform: rotate(-45deg);
+    }
+
+    100% {
+        transform: rotate(-135deg);
+    }
+}
